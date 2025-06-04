@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Westwew Coffee</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #dfe9f3, #ffffff);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 220px;
+      background: linear-gradient(#3a7bd5, #3a6073);
+      color: white;
+      padding: 20px 15px;
+    }
+    .sidebar h4 {
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .sidebar a {
+      color: white;
+      display: block;
+      margin: 15px 0;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    .main {
+      margin-left: 220px;
+      padding: 20px 40px;
+    }
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px;
+    }
+    .profile {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .profile-icon {
+      width: 30px;
+      height: 30px;
+      background-color: #ccc;
+      border-radius: 50%;
+    }
+    .content-box {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      position: relative;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .background-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 80px;
+      color: rgba(0, 0, 0, 0.06);
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      z-index: 0;
+    }
+    .content-text {
+      position: relative;
+      z-index: 1;
+    }
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #999;
+    }
+    .user-info {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  text-align: right;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.user-info .user-detail {
+  font-size: 12px;
+  color: #666;
+  display: block;
+}
+.profile-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9); /* efek transparan */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007bff;
+}
+
+.profile-info {
+  text-align: left;
+  font-size: 18px;
+}
+
+.profile-info p {
+  margin: 10px 0;
+}
+  </style>
+</head>
+<body>
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-mug-hot"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Westwew Coffee</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">
+                    <i class="far fa-user-circle"></i>
+                    <span>Profile</span></a>
+            </li>            
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-id-card"></i>
+                    <span>Tentang Kami</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="menu.html">
+                    <i class="fas fa-tasks"></i>
+                    <span>Menu</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Galery.html">
+                    <i class="fas fa-image"></i>
+                    <span>Galery</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kontak.html">
+                    <i class="fas fa-users"></i>
+                    <span>Kontak</span></a>
+            </li>
+  </div>
+
+<div class="profile-container">
+  <h2>Profil Mahasiswa</h2>
+  <div class="profile-card">
+    <img src="https://th.bing.com/th/id/OIP.EqkM7LiMYOJ3fulVhU9kMwHaFB?w=248&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Foto Profil" class="profile-img">
+    <div class="profile-info">
+      <p><strong>Nama:</strong> Sandy Alrobby</p>
+      <p><strong>NIM:</strong> 202422006</p>
+      <p><strong>Program Studi:</strong> Teknik Informatika</p>
+      <p><strong>Mata Kuliah:</strong> Programming Web</p>
+    </div>
+  </div>
+</div> 
+
+    <footer>
+      Copyright © westwewcoffee
+    </footer>
+  </div>
+
+</body>
+</html>
